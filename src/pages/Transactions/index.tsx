@@ -9,6 +9,7 @@ import {
   TransactionsContainer,
   TransactionsTable,
 } from "./styles";
+import { Footer } from "../../components/Footer";
 
 export function Transactions() {
   const transactions = useContextSelector(TransactionsContext, (context) => {
@@ -44,6 +45,7 @@ export function Transactions() {
           </tbody>
         </TransactionsTable>
       </TransactionsContainer>
+      <Footer />
     </div>
   );
 }
